@@ -1,0 +1,173 @@
+<!-- Task 1.  User Login page -->
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="postcss.config.js">
+  <link rel="stylesheet" href="tailwind.config.js">
+  <title>Task_1</title>
+  <!-- Awesome Font -->
+  <script src="https://kit.fontawesome.com/6bc2bdbe99.js" crossorigin="anonymous"></script>
+  <!-- Tailwind Link -->
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <div class="flex flex-row h-full w-full">
+    <!-- Login Page Section -->
+    <div class="p-10 w-full xl:ml-20 xl:mt-20">
+      <div class="text-center">
+        <h1 class="text-3xl text-gray-800 mb-4 mt-2">Login</h1>
+        <p class="text-gray-500 mb-5">Enter your credentials to access your account</p>
+      </div>
+      <!-- Login Button -->
+      <Button
+        class="w-full flex items-center justify-center gap-3 py-2.5 px-4 border border-gray-300 text-gray-700 font-medium">
+        <i class="fa-brands fa-google"></i>Login with Google</Button>
+      <!-- Divider -->
+      <div class="flex flex-row w-full justify-center items-center mt-4">
+        <div class="w-full max-h-0.5 border border-solid border-gray-300"></div>
+        <span class="p-2">Or</span>
+        <div class="w-full border border-solid border-gray-300"></div>
+      </div>
+      <!-- Form Section -->
+      <div>
+        <form action="#">
+          <div>
+            <label for="email" class="text-sm">Enter Your Email</label>
+          </div>
+          <input type="email" id="email" name="email" placeholder="email@gmail.com"
+            class="text-sm border border-solid border-gray-500 px-3 py-1 w-full rounded-sm">
+          <div class="mt-3 flex flex-row justify-between">
+            <label for="password" class="text-sm">Enter Your Email</label>
+            <a href="#" class="text-sm text-blue-700">Forgot Password?</a>
+          </div>
+          <input type="password" id="password" name="password" placeholder="Password"
+            class="text-sm border border-solid border-gray-500 px-3 py-1 w-full rounded-sm ">
+        </form>
+      </div>
+      <!-- Login Button - 2 -->
+       <div>
+        <button class=" w-full bg-blue-600 text-white py-1 mt-4 rounded-sm">Login</button>
+       </div>
+       <!-- Footer Text -->
+        <div>
+          <div class="flex flex-row gap-2 justify-center items-center text-sm mt-4">
+            <p class="text-gray-500">Don't have an account?</p><a href="#">Register here</a>
+          </div>
+        </div>
+    </div>
+    <!-- Image Section -->
+    <div class="w-full hidden md:block ">
+      <div class="w-full h-full flex justify-center mt-3">
+        <img src="src/bg-login-page.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+<!-- Task 2. Image gallery -->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="postcss.config.js">
+  <link rel="stylesheet" href="tailwind.config.js">
+  <title>Task_2</title>
+
+  <!-- Tailwind Link -->
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="w-fit h-fit bg-gray-300">
+  
+  <div class="w-fit h-fit xl:mx-40 mb-8 ">
+    <p class="w-full px-10 py-3 font-bold text-xl">Image gallery</p>
+    <div class="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-3 px-10">
+      
+      <div class="w-full h-full"><img class="w-full h-fit" src="src/bg-login-page.png"></div>
+      <div class="w-full h-full"><img class="w-full h-fit" src="src/bg-login-page.png"></div>
+      <div class="w-full h-full"><img class="w-full h-fit" src="src/bg-login-page.png"></div>
+      </div>
+    </div>
+  
+</body>
+
+</html>
+
+
+<!-- Task 3: Dashboard -->
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="postcss.config.js">
+  <link rel="stylesheet" href="tailwind.config.js">
+  <title>Task_3</title>
+
+  <!-- Awesome Font -->
+  <script src="https://kit.fontawesome.com/6bc2bdbe99.js" crossorigin="anonymous"></script>
+
+  <!-- Tailwind Link -->
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="h-[100vh] w-[100vw] bg-gray-300">
+  <!-- Main Container -->
+  <div class="w-full h-full grid grid-flow-col">
+
+    <!-- Left Side Bar -->
+    <div class=" bg-gray-800 text-gray-300 flex flex-col justify-between h-full">
+      
+      <div class="text-sm flex flex-col mt-3 gap-2 px-2 transition">
+        <!-- Title -->
+        <div class="text-2xl font-bold text-center text-white">Dashboard</div>
+        <!-- Active Class -->
+        <div class=" bg-gray-700 p-2 mt-1 text-white  rounded-md"><i class="fa-solid fa-chart-pie px-1"></i>Dashboard</div>
+        <!-- Non Active Menu -->
+        <div class="p-1  rounded-md transition-all duration-300 ease-in-out hover:p-2 hover:bg-gray-700 hover:text-white"><i class="fa-solid fa-user-group px-1"></i>Team</div>
+        <div class="p-1 rounded-md transition-all duration-300 ease-in-out hover:p-2 hover:bg-gray-700 hover:text-white"><i class="fa-solid fa-file-pen px-1"></i>Projects</div>
+        <div class="p-1 rounded-md transition-all duration-300 ease-in-out hover:p-2 hover:bg-gray-700 hover:text-white"><i class="fa-solid fa-calendar-days px-1"></i>Calendar</div>
+        <div class="p-1 rounded-md transition-all duration-300 ease-in-out hover:p-2 hover:bg-gray-700 hover:text-white"><i class="fa-solid fa-id-card px-1"></i>Documents</div>
+        <div class="p-1 rounded-md transition-all duration-300 ease-in-out hover:p-2 hover:bg-gray-700 hover:text-white"><i class="fa-solid fa-file-lines px-1"></i>Reports</div>
+      </div>
+
+      <!-- Side Bar Footer -->
+       <div class="text-sm ml-3 mb-3 flex flex-col gap-2">
+        <div>Your Teams</div>
+        <div><i class="fa-solid fa-user-group px-1"></i>PW Skills</div>
+        <div><i class="fa-solid fa-user-group px-1"></i>PW Labs</div>
+        <div><i class="fa-solid fa-user-group px-1"></i>PW IOI</div>
+       </div>
+    </div>
+
+    <!-- Main Area Right side -->
+    <div class="w-[80vw] flex h-fit max-md:justify-center justify-center ">
+      <div class="max-md:w-1/2 w-[75vw] bg-white  mt-3 rounded-md flex flex-row justify-between justify-items-center hover:px-1  hover:translate-y-1 shadow-[0_4px_20px_rgba(0,0,0,0.4)] transition-all duration-200 ease-in-out">
+        <div class="p-1"><i class="fa-solid fa-user py-3 pl-6 pr-2"></i>Profile</div>
+        <div class="flex flex-row gap-4 items-center py-3 pr-6"><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-user"></i></div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
